@@ -47,7 +47,7 @@ function WebcamFeed() {
     if (canvas && video) {
       const context = canvas.getContext("2d");
       context.drawImage(video, 0, 0, canvas.width, canvas.height);
-      sendFrame(canvas.toDataURL("image/png", 0.5)); // Send frame as base64
+      sendFrame(canvas.toDataURL("image/png", 0.5)); 
     }
   };
 
